@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+     <!-- tallwind css   -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+   <main class="w-3/4
+   mx-auto">
+       <h1 class="text-5xl font-medium text-violet-900 text-center mt-5">Account Belance</h1>
+
+       <header class=" bg-slate-900  mt-8 rounded-lg grid grid-cols-1 gap-4 md:grid-cols-3 gap-4 p-5 py-16">
+
+            <div class="text-center bg-slate-50 py-10 rounded-lg">
+                <h2 class="text-violet-900 font-medium text-3xl">Diposite</h2>
+                <h2 class="text-violet-900 font-medium text-3xl">$<span id="diposite_money">00</span></h2>
+            </div>
+            <div class="text-center bg-slate-50 py-10 rounded-lg">
+                <h2 class="text-violet-900 font-medium text-3xl">Withdraw</h2>
+                <h2 class="text-violet-900 font-medium text-3xl">$<span id="total_withdraw">00</span></h2>
+            </div>
+            <div class="text-center bg-slate-50 py-10 rounded-lg">
+                <h2 class="text-violet-900 font-medium text-3xl">Total Belance</h2>
+                <h2 class="text-violet-900 font-medium text-3xl">$<span id="total_belance">00</span></h2>
+            </div>
+       </header>
+
+       <!-- Withdraw and money diposite  -->
+
+       <section class="grid grid-cols-1 gap-4 md:grid-cols-2 gap-4 py-5">
+
+           <!-- Diposite section  -->
+           <div>
+               <h2 class="text-violet-900 font-medium text-2xl">Diposite</h2>
+               <input id="diposite_input" class="block my-2 pl-5 pr-40 py-2 rounded-lg" type="text" placeholder="What Ammount Diposite?">
+               <button id="diposite_btn" class="px-5 py-2 bg-white text-indigo-900 font-bold rounded-lg">Send</button>
+            </div>
+
+            <!-- Withdraw section  -->
+           <div>
+               <h2 class="text-violet-900 font-medium text-3xl">Withdraw</h2>
+               <input id="withdraw_input" class="block my-2 w-60 pl-5 py-2 rounded-lg" type="text" placeholder="What Ammount Withdraw?">
+               <button id="withdraw_btn" class="px-5 py-2 bg-white text-indigo-900 font-bold rounded-lg">Receive</button>
+            </div>
+       </section>
+       
+       <p id="error" class="w-3/4 bg-red-500 hidden">Plaese type valid number!!!! <span id="close" class="float-right pr-5">X</span></p>
+   </main>
+    <script src="js/newEx.js"></script>
+</body>
+</html>
